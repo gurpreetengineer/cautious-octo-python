@@ -1,0 +1,7 @@
+In this example, the bootloader sets up the stack pointer, loads the kernel into memory from the first floppy drive, and then jumps to the beginning of the kernel code.
+
+The mov instructions set up the various parameters for reading the kernel from disk, including the sector number, head number, and destination address in memory. The int 0x13 instruction calls the BIOS function to read the sector into memory.
+
+Finally, the jmp instruction jumps to the beginning of the kernel code, which is assumed to be located at memory address 0x1000.
+
+Note that this is just a simple example of a bootloader logic, and a real bootloader would likely be more complex and robust, with error handling, disk partition detection, and other features.
