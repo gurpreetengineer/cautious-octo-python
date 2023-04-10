@@ -17,8 +17,11 @@ That being said, here is a general overview of the steps involved in writing a s
 
 
 5) Implement system calls: Develop the code that will provide an interface for user applications to interact with the operating system.
+[ >>> ui_and_system_calls.c] (folder: C_language_snippet)
+
 
 6) Develop device drivers: Develop the code that will enable the operating system to communicate with various hardware devices, such as storage devices, network cards, and displays.
+[ >>> *_device_driver.c] (folder: C_language_snippet)
 
 7) Write user-space applications: Develop the code for user applications that can run on the operating system.
 
