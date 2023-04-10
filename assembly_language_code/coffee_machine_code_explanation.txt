@@ -1,0 +1,3 @@
+This script sets up constants to represent the button inputs and output pin, initializes the coffee machine by turning off the heating element, and then waits for a button press. When a button is pressed, the script jumps to the corresponding coffee-making subroutine, turns on the heating element, waits for the water to heat up for the appropriate time, turns off the heating element, and then jumps back to the start of the script to wait for the next button press.
+
+This is a very basic example, but it can be expanded upon to include features like temperature control, multiple cup sizes, and different types of coffee
