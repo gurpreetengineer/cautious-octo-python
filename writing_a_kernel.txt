@@ -29,3 +29,6 @@ This is just a very high-level overview of the steps involved in writing a small
 
 
 
+
+OR YOU CAN WRITE A QUANTUM OPERATING SYSTEM
+
