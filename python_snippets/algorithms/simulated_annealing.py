@@ -1,3 +1,7 @@
+# Annealing :means: The process or art of treating substances by means of heat, so as to remove their
+# brittleness and at the same time render them tough and more or less elastic.
+
+
 import math
 import random
 
