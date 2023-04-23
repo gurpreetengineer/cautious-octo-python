@@ -1,0 +1,15 @@
+1) Hangman - a game where the user has to guess a word by suggesting letters one by one.
+
+2) Rock, Paper, Scissors - a game where the user plays against the computer and chooses either rock, paper, or scissors.
+
+3) Number guessing game - a game where the computer chooses a random number and the user has to guess it.
+
+4) Tic Tac Toe - a two-player game where each player tries to get three of their symbols in a row.
+
+5) Blackjack - a card game where the user plays against the computer and tries to get a higher score than the dealer without going over 21.
+
+6) Memory game - a game where the user has to remember the positions of cards that are faced down and try to match pairs.
+
+7) Snake game - a classic game where the player controls a snake and tries to eat as much food as possible without hitting the walls or the snake's own tail.
+
+8) Minesweeper - a game where the user has to clear a board without detonating any hidden mines.
