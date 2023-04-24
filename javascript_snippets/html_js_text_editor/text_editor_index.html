@@ -1,0 +1,42 @@
+<html>
+  <meta charset="UTF-8">
+	<script type="text/javascript" src="text_editor_script.js"></script>
+  <scru
+  <title>TEXT EDITOR: BOOOO</title>
+  <body>
+    <div id="editor">
+      <div class="toolbar">
+        <button onclick="bold()"><b>B</b></button>
+        <button onclick="italic()"><i>I</i></button>
+        <button onclick="underline()"><u>U</u></button>
+        <select onchange="fontSize(this)">
+          <option value="1">Size 1</option>
+          <option value="2">Size 2</option>
+          <option value="3">Size 3</option>
+          <option value="4">Size 4</option>
+          <option value="5">Size 5</option>
+          <option value="6">Size 6</option>
+          <option value="7">Size 7</option>
+        </select>
+        <select onchange="fontFamily(this)">
+          <option value="Arial">Arial</option>
+          <option value="Helvetica">Helvetica</option>
+          <option value="Times New Roman">Times New Roman</option>
+          <option value="Courier">Courier</option>
+          <option value="Verdana">Verdana</option>
+          <option value="Georgia">Georgia</option>
+        </select>
+        <button onclick="align('left')">
+          <i class="fa fa-align-left"></i>
+        </button>
+        <button onclick="align('center')">
+          <i class="fa fa-align-center"></i>
+        </button>
+        <button onclick="align('right')">
+          <i class="fa fa-align-right"></i>
+        </button>
+      </div>
+      <div contenteditable="true"></div>
+    </div>
+  </body>
+</html>
