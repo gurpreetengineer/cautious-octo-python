@@ -1,12 +1,14 @@
 import requests
 import json
 
-API_KEY = 'YOUR_API_KEY'
-WEBSITE_URL = 'https://www.example.com'
+API_KEY = 'YOUR_API_KEY_HERE'
+WEBSITE_URL = 'https://www.google.com'
 
-url = f'https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url={WEBSITE_URL}&key={API_KEY}'
+url = f'https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url={WEBSITE_URL}&fields=lighthouseResult%2Fcategories%2F*%2Fscore&prettyPrint=false&strategy=desktop&category=performance&category=best-practices&category=accessibility&category=seo&key={API_KEY}'
 
 response = requests.get(url)
+
+
 
 data = json.loads(response.text)
 
@@ -19,3 +21,11 @@ print(f'Performance score: {performance_score}')
 print(f'Accessibility score: {accessibility_score}')
 print(f'Best practices score: {best_practices_score}')
 print(f'SEO score: {seo_score}')
+
+
+# Similar Output:
+  
+# Performance score: 0.99
+# Accessibility score: 0.89
+# Best practices score: 1
+# SEO score: 0.82
