@@ -22,6 +22,8 @@ print(f'Accessibility score: {accessibility_score}')
 print(f'Best practices score: {best_practices_score}')
 print(f'SEO score: {seo_score}')
 
+# Refer this stackoverflow link
+# https://stackoverflow.com/questions/53290705/find-score-inside-json-result-of-pagespeed-insights-api-v5
 
 # Similar Output:
   
