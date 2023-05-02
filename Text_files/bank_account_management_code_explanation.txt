@@ -1,0 +1,17 @@
+In this example, the program first connects to the SQLite database using the `sqlite3.connect` function. It then creates a table for the bank accounts using SQL `CREATE TABLE` statement, which has three columns: `id` for the account ID, `name` for the account holder's name, and `balance` for the account balance.
+
+The program then defines several functions to perform various operations on the bank accounts. The `create_account` function takes a name and an initial balance as arguments, and inserts a new row into the `accounts` table using SQL `INSERT INTO` statement.
+
+The `deposit` function takes an account ID and an amount as arguments, and updates the balance of the corresponding account using SQL `UPDATE` statement. It also records the transaction in the `transactions` table using the `record_transaction` function.
+
+The `withdraw` function works similarly to the `deposit` function, but it checks if the account has sufficient balance before updating the balance.
+
+The `check_balance` function takes an account ID as argument, retrieves the balance of the corresponding account from the `accounts` table using SQL `SELECT` statement, and prints the balance.
+
+The `view_history` function takes an account ID as argument, retrieves the transaction history of the corresponding account from the `transactions` table using SQL `SELECT` statement, and prints the transaction history.
+
+Finally, the program creates a table for the transaction history using SQL `CREATE TABLE` statement, which has five columns: `id` for the transaction ID, `account_id` for the account ID, `type` for the transaction type (deposit or withdrawal), `amount` for the transaction amount, and `timestamp` for the transaction timestamp (which is automatically set to the current time using SQL `DEFAULT CURRENT_TIMESTAMP`).
+
+The program then demonstrates the usage of the functions by creating two bank accounts, depositing money into one account, withdrawing money from the other account, checking the balance of the first account, and viewing the transaction history of the first account. Finally, the program closes the database connection using the `conn.close()` function.
+
+Note that this is just a simple example, and a real-world banking application would require much more robust security measures and validation checks to ensure the safety and accuracy of financial transactions.
