@@ -62,3 +62,23 @@ int main() {
 
     return 0;
 }
+
+/**
+ * @brief explanation
+ * 
+ * The program uses Boost.Filesystem to check if a file exists before attempting to read or delete it. 
+ * The create_file function creates a new file with the given filename using std::ofstream, and 
+ * prints a success or error message to the console. 
+ * 
+ * The read_file function opens an existing file with the given filename using std::ifstream, 
+ * reads its contents, and prints them to the console. 
+ * 
+ * The update_file function overwrites the contents of an existing file with the given content using std::ofstream, 
+ * and prints a success or error message to the console. 
+ * 
+ * The delete_file function removes an existing file with the given filename using boost::filesystem::remove, 
+ * and prints a success or error message to the console.
+ * 
+ * In this example, the program creates a file named "test.txt", reads its contents, 
+ * updates its contents to "Hello, world!", reads its contents again, and then deletes the file.
+ */
