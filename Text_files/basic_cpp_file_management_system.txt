@@ -1,0 +1,11 @@
+This program presents the user with a menu of options for creating, reading, updating, and deleting files. The program uses the ofstream and ifstream classes from the standard C++ library to write to and read from files, respectively.
+
+To create a file, the program prompts the user for a filename and uses the open() method of the ofstream class to create a new file with the specified name. To read a file, the program prompts the user for a filename and uses the open() method of the ifstream class to open the existing file with the specified name, and then uses a while loop with the getline() method to read the contents of the file line by line and print them to the console.
+
+To update a file, the program prompts the user for a filename and uses the open() method of the ofstream class with the ios::app flag to open the file in "append" mode, allowing the program to write new content to the end of the existing file. The program then prompts the user to enter text to add to the file, which is written to the file using the << operator.
+
+To delete a file, the program prompts the user for a filename and uses the remove() function from the <stdio.h> header to delete the file with the specified name. Finally, the program continues to loop through the menu options until the user chooses to quit by entering "5".
+
+Note that this program uses the standard C++ library, which provides basic file management functionality. For more complex file management tasks, you may want to consider using a third-party library such as Boost.Filesystem, which provides additional features such as file system navigation, file copying and renaming, and symbolic link creation.
+
+Overall, this program provides a simple but functional file management system that can be used to create, read, update, and delete files on the user's computer. With some additional features and error handling, this program could be extended into a more robust and flexible file management tool.
