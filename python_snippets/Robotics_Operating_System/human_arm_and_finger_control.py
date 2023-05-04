@@ -57,3 +57,13 @@ if __name__ == '__main__':
 
     # Spin the ROS node
     rospy.spin()
+
+# To control the arm and fingers, we would first need to connect to the ROS network and initialize the appropriate ROS nodes for
+# communication with the robot. 
+# Once connected, we can send commands to the joints of the arm and fingers to control their position and movement.
+
+# This is a sample code to control a robotic arm and fingers in Python using ROS. 
+# This code subscribes to joint states topics for the arm and fingers, and 
+# publishes commands to position controllers for the joints of the arm and fingers. 
+# 
+# It can be modified to control the arm and fingers of a specific robot.
