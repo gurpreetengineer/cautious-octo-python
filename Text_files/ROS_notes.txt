@@ -1,0 +1,12 @@
+ROS is an open-source framework that provides a collection of tools, libraries, and conventions for building complex robotic systems. It offers a modular architecture that allows developers to create reusable and scalable code for robotics applications.
+
+The basic structure of a ROS code includes:
+
+1) Nodes: The basic building blocks of ROS, nodes are separate executables that communicate with each other using ROS messages. Nodes can publish messages to a topic or subscribe to a topic to receive messages.
+
+2) Topics: Topics are channels for message communication between nodes. Nodes can publish messages to a topic or subscribe to a topic to receive messages. Topics are defined by a message type, and messages are exchanged in a publish/subscribe model.
+
+3) Services: Services allow nodes to call each other's functions, similar to remote procedure calls. A node can advertise a service, and another node can call that service by sending a request message.
+
+4) Parameters: Parameters are key-value pairs that can be used to configure nodes and modify their behavior. Nodes can read and write parameters at runtime.
+
