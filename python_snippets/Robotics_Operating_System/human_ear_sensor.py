@@ -62,3 +62,11 @@ if __name__ == '__main__':
 
 # Close the SQL database connection when the program exits
 conn.close()
+
+# In this example, we define an ear sensor topic and an SQL database file. We then define an SQL query to insert voice data and create a connection to the database. We also define functions to calculate the wavelength and pitch of a sound wave.
+
+# In the ear_sensor_callback function, we extract the sample rate and audio data from the message, calculate the frequency, wavelength, and pitch of the audio data, and insert the voice data into the SQL database using the SQL query we defined earlier.
+
+# Finally, we initialize the ROS node, create a subscriber for the ear sensor topic, and run the subscriber indefinitely using rospy.spin(). We also close the SQL database connection when the program exits.
+
+# Note that this example assumes that the ear sensor topic publishes sensor_msgs/AudioData messages. You may need to modify this code to work with a different type of ear sensor message. Also, the wavelength calculation assumes that the sound wave is a pure sine wave, which may not be true in all cases.
