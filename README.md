@@ -1,4 +1,6 @@
-# cautious-octo-python
+# cautious-octo-python: A repo created out of boredom.
+***There is no specific meaning to the repo's name. Kindly don't waste your brain cells deducing it.***
+
 
 # WELCOME TO THIS REPO
 
