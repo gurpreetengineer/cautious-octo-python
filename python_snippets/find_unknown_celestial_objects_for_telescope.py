@@ -54,5 +54,3 @@ data = zscale(data)
 # Process images: Use image processing techniques to clean up the images and identify any potential celestial objects.
 # Analyze data: Analyze the data collected from the images and look for any patterns or anomalies that could indicate the presence of an unknown celestial object.
 # Report findings: Generate a report of any potential discoveries and share the findings with the appropriate scientific community.
-
-
