@@ -1,0 +1,20 @@
+Question:) What's this application about?
+Answer:)   Creating an android application for VPN in java. Adding additional functionality such as traffic filtering, encryption, and user authentication. Also obtaining additional permissions and declare them in your AndroidManifest.xml file.
+
+**Step 1:** Add dependencies to your app-level build.gradle file
+
+
+**Step 2:** Create a Service class for your VPN service: MyVpnService.java
+
+Explanation of MyVpnService.java file:
+  We create a `MyVpnService` class that extends the `VpnService` class provided by the `androidx.vpn` library. The `onStartCommand` method is called when the service is started, and it creates a new thread to run the `run` method. The `onDestroy` method is called when the service is stopped, and it shuts down the executor service.
+
+  The `run` method establishes the VPN connection and continuously reads and filters traffic while the VPN connection is active. This is where you can implement your custom traffic filtering logic.
+
+  The `establishVpn` method sets up the VPN configuration using the `Builder` class provided by the `VpnService` class. It specifies the VPN address, route, MTU, DNS servers, and a blocking flag. It also sets an intent to launch the `MainActivity` class to handle user authentication. You can modify these settings to suit your specific needs.
+
+  The `closeVpn` method is called when the VPN connection is closed and it releases any resources that were acquired.
+
+
+**Step 3:** Create a MainActivity class for user authentication: MainActivity.java
+

@@ -1,0 +1,8 @@
+dependencies {
+    // VPN Service
+    implementation 'androidx.vpn:vpn-service:1.0.0'
+    // Encryption
+    implementation 'javax.crypto:jce:1.2.1'
+    // User Authentication
+    implementation 'androidx.biometric:biometric:1.2.0'
+}
