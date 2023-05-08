@@ -1,6 +1,6 @@
 import ast
 
-# Refer to Text_files/python_code_that_learns.py for more explanation
+# Refer to Documentations/python_code_that_learns.py for more explanation
 # Define the source code to parse
 source_code = '''
 def add_numbers(x, y):

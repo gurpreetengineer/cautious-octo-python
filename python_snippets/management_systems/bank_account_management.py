@@ -1,6 +1,6 @@
 import sqlite3
 
-# Refer cautious-octo-python/Text_files/bank_account_management_code_explanation.txt for more info.
+# Refer cautious-octo-python/Documentations/bank_account_management_code_explanation.txt for more info.
 
 # Connect to the SQLite database
 conn = sqlite3.connect('bank_accounts.db')
