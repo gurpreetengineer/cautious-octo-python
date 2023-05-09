@@ -1,10 +1,10 @@
-const SPREADSHEET_ID = '177FQps1lTBL6eyA6tse6OYsEhJL3yqA3ZqT35D7tK_I';
+const SPREADSHEET_ID = 'YOUR_SPREAD_SHEET_ID_HERE';
 
 function fetchData(endpoint, page) {
-  const url = `https://api.au1.cliniko.com/v1${endpoint}?page=${page}`;
+  const url = `https://EXAMPLE.com/v1${endpoint}?page=${page}`;
   const options = {
     headers: {
-      Authorization: 'Basic ' + Utilities.base64Encode('MS0xMTQ4ODg1NTcyMzU4NTA1NzY3LWJmUE9zbnJVaXpyaVpyMmJYU0FuM0ZYMVl4NTlpWjhZ-au1'),
+      Authorization: 'Basic ' + Utilities.base64Encode('YOUR_API_KEY_HERE'),
       Accept: 'application/json',
     },
   };
@@ -85,7 +85,7 @@ function fetchAndWriteData(endpoint) {
 
 function doGet(request) {
   const endpoint = request?.path;
-  if (endpoint == '/appointments' || endpoint == '/patients' || endpoint == '/invoices') {
+  if (endpoint == '/endpoint1' || endpoint == '/endpoint2' || endpoint == '/endpoint3') {
     fetchAndWriteData(endpoint);
     return ContentService.createTextOutput(`Data uploaded to ${endpoint.slice(1).charAt(0).toUpperCase() + endpoint.slice(2).toLowerCase()}`);
   } else {
@@ -93,6 +93,6 @@ function doGet(request) {
   }
 }
 
-doGet({ path: '/appointments' });
-doGet({ path: '/patients' });
-doGet({ path: '/invoices' });
+doGet({ path: '/endpoint1' });
+doGet({ path: '/endpoint2' });
+doGet({ path: '/endpoint3' });
