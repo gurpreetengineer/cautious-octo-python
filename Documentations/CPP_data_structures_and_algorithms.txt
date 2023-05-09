@@ -1,0 +1,60 @@
+List of some of the data structures available in C++:
+
+1) Arrays
+2) Vectors
+3) Linked lists
+4) Stacks
+5) Queues
+6) Trees (binary, AVL, Red-Black, etc.)
+7) Graphs (directed, undirected, weighted, unweighted, etc.)
+8) Hash tables
+9) Sets
+10) Maps
+11) Heaps (min-heap, max-heap, priority queue, etc.)
+12) Tries
+13) Deques
+14) Strings
+
+
+
+C++ has a wide range of built-in algorithms that can be used for different purposes. Some of the most commonly used algorithms in C++ are:
+
+1)  Sorting algorithms
+      Bubble Sort
+      Selection Sort
+      Insertion Sort
+      Merge Sort
+      Quick Sort
+
+2)  Searching algorithms
+      Linear Search
+      Binary Search
+
+3)  String algorithms
+      String sorting (using any of the sorting algorithms)
+      String searching (using any of the searching algorithms)
+      String matching (e.g. Knuth-Morris-Pratt algorithm)
+
+4)  Graph algorithms
+      Breadth-First Search (BFS)
+      Depth-First Search (DFS)
+      Dijkstra's Algorithm (shortest path)
+      Bellman-Ford Algorithm (shortest path with negative weights)
+      Kruskal's Algorithm (minimum spanning tree)
+      Prim's Algorithm (minimum spanning tree)
+
+5)  Numerical algorithms
+      Euclidean Algorithm (greatest common divisor)
+      Fibonacci Algorithm
+      Newton's Method (finding roots of a function)
+      Monte Carlo Simulation
+
+6)  Dynamic Programming
+      Longest Common Subsequence
+      Knapsack Problem
+      Edit Distance
+7)  Miscellaneous algorithms
+      Maximum subarray sum
+      Convex Hull
+      Binary Exponentiation
+      Sieve of Eratosthenes (finding prime numbers)
