@@ -1,0 +1,17 @@
+1) Create an environment (it's similar to node_modules)
+    > python3 -m venv 123venv 
+        (venv - command) 
+        (123venv - environment name)
+
+2) Now, go inside that environment
+    > source .venv/bin/activate
+        (.venv - name of the created environment)
+
+3) Now, in that env, (in this case .venv), install relevant packages.
+    > pip install package_name
+
+4) Now you can use the packages and run the file.
+
+
+
+
