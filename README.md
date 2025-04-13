@@ -14,3 +14,8 @@ __If you want to contribute to this repo, you're most welcome. Just fork this re
 Date syntax being: (DD_MM_YYYY)__
 
 **P.S.** ___I know you having tough time of life but it doesn't mean you can mess around with main branch.___
+
+## For further testing and bruteforce attack wordlist, you can clone this repo:
+**SEC LISTS REPO:**
+__https://github.com/gurpreetengineer/SecWordLists.git__
+
