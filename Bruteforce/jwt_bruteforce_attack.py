@@ -22,6 +22,9 @@ for secret in wordlist:
         print(f"[+] Payload: {decoded}")
         break
     except InvalidSignatureError:
-        print(f"[-] Tried '{secret}' — invalid")
-    except Exception as e:
-        print(f"[-] Error with '{secret}': {e}")
+        continue
+        # print(f"[-] Tried '{secret}' — invalid")
+    # except Exception as e:
+    #     print(f"[-] Error with '{secret}': {e}")
+
+print('out')
