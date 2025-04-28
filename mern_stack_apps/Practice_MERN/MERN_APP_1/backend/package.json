@@ -1,0 +1,33 @@
+{
+  "name": "mern_app_1",
+  "version": "1.0.0",
+  "description": "this is a practice mern stack application version 1",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js",
+    "server": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gurpreetengineer/cautious-octo-python.git"
+  },
+  "keywords": [
+    "mern_app_1",
+    "mongodb_crud_practice"
+  ],
+  "author": "Garry Bamrah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gurpreetengineer/cautious-octo-python/issues"
+  },
+  "homepage": "https://github.com/gurpreetengineer/cautious-octo-python#readme",
+  "dependencies": {
+    "cron": "^4.3.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "mongodb": "^6.16.0",
+    "mongoose": "^8.14.0",
+    "nodemon": "^3.1.10"
+  }
+}
