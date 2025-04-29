@@ -1,15 +1,16 @@
+require('dotenv').config();
+
 const express = require('express');
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser');
 
-const createPostControler = require('./controllers/post')
-
 const globalErrorHandlingMiddleware = require('./middlewares/globalErrorHandlingMiddleware')
 
-require('dotenv').config()
+const postRoutes = require('./routes/postRoutes')
 
 const {
   createPostAPI,
+  getAllPostsAPI,
   MONGO_URI,
   PORT
 } = process.env;
@@ -32,7 +33,7 @@ app.use(express.json());
 
 app.use(globalErrorHandlingMiddleware);
 
-app.post(createPostAPI, createPostControler);
+app.use('/', postRoutes);
 
 app.listen(PORT, () => {
   console.log('Server started on port 3000');
