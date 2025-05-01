@@ -3,6 +3,7 @@ require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser');
+const cors = require('cors');
 
 const globalErrorHandlingMiddleware = require('./middlewares/globalErrorHandlingMiddleware')
 
@@ -30,6 +31,7 @@ mongoose.connect(MONGO_URI, {
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(express.json());
+app.use(cors());
 
 app.use(globalErrorHandlingMiddleware);
 

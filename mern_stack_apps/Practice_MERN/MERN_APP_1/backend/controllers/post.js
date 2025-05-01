@@ -54,7 +54,7 @@ const readOnePostController = async (req, res) => {
   try {
     const postFetched = await Post.findById(req.query.id);
     if (!postFetched) {
-      return res.status(404).json({
+      return res.status(200).json({
         status: 'ok',
         fetching: 'failed',
         isPostFound: false,
@@ -96,7 +96,7 @@ const updatePostController = async (req, res) => {
       runValidators: true
     });
     if (!updatedPost) {
-      return res.status(404).json({
+      return res.status(200).json({
         status: 'ok',
         updation: 'failed',
         isPostUpdated: false,
@@ -126,7 +126,7 @@ const deletePostController = async (req, res) => {
     // const deletedPost = await findByIdAndDelete(req.query.id);
     const deletedPost = await Post.findByIdAndDelete(req.query.id);
     if (!deletedPost) {
-      return res.status(404).json({
+      return res.status(200).json({
         status: 'ok',
         deletion: 'failed',
         isPostDeleted: false,
