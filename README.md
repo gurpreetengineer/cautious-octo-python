@@ -19,3 +19,7 @@ Date syntax being: (DD_MM_YYYY)__
 **SEC LISTS REPO:**
 __https://github.com/gurpreetengineer/SecWordLists.git__
 
+## NOTICE
+The MERN_APP_1 has been moved to another repository.
+Here is the link: [vercel_deployment_testing](https://github.com/gurpreetengineer/vercel_deployment_testing)
+
